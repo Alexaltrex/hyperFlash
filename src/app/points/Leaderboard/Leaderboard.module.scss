@@ -1,0 +1,28 @@
+@import "../../../assets/styles/app";
+
+.leaderboard {
+  margin-top: 24px;
+
+  @include desktop {
+    margin-top: 0;
+  }
+
+  .title {
+    font-size: 14px;
+    line-height: 140%;
+    color: $color_dark-500;
+  }
+
+  .card {
+    margin: 16px -24px 0;
+    background: $color_light;
+    border-radius: 16px;
+    padding: 0 16px;
+    height: 200px;
+
+
+    @include desktop {
+      margin: 16px 0 0;
+    }
+  }
+}
