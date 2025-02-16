@@ -7,22 +7,12 @@ import {useState} from "react";
 import {clsx} from "clsx";
 import {Stake} from "./Stake/Stake";
 import {Unstake} from "./Unstake/Unstake";
-import {StakeModal} from "./StakeModal/StakeModal";
-import {UnstakeModal} from "./UnstakeModal/UnstakeModal";
+
 export const Stakers = () => {
     const [tab, setTab] = useState(0);
-    const [showCongratsModal, setShowCongratsModal] = useState(false);
-    const [showUnstakeModal, setShowUnstakeModal] = useState(false);
 
     return (
         <div className={style.stakers}>
-
-            <StakeModal show={showCongratsModal}
-                        onClose={() => setShowCongratsModal(false)}
-            />
-            <UnstakeModal show={showUnstakeModal}
-                          onClose={() => setShowUnstakeModal(false)}
-            />
 
             <div className={style.inner}>
 
@@ -77,8 +67,6 @@ export const Stakers = () => {
                                     </button>
                                 ))
                             }
-
-
                         </div>
 
                         <div className={style.cardBody}>
