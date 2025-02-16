@@ -5,13 +5,13 @@ import {clsx} from "clsx";
 import {svgIcons} from "../../../../assets/svgIcons";
 import Tooltip, {TooltipProps, tooltipClasses} from '@mui/material/Tooltip';
 import {styled} from '@mui/material/styles';
-import {useState} from "react";
+import React, {useState} from "react";
 import ClickAwayListener from '@mui/material/ClickAwayListener';
 
 
 type TooltipCustomType = {
     className?: string
-    content: JSX.Element
+    content: React.ReactNode
 }
 
 export const TooltipCustom = ({className, content}: TooltipCustomType) => {
