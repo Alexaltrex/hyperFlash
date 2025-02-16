@@ -20,7 +20,6 @@ export const TooltipCustom = ({className, content}: TooltipCustomType) => {
     const handleTooltipClose = () => setOpen(false);
     const handleTooltipOpen = () => setOpen(true);
 
-
     return (
         <div className={clsx(style.tooltipCustom, Boolean(className) && className)}>
 

@@ -48,15 +48,18 @@ export const WaveText = ({
     }, {scope: appRef})
 
     useEffect(() => {
-        if (width >= 1440) {
-            if (hover) {
-                tweenRefTop.current.play()
-                tweenRefBottom.current.play()
-            } else {
-                tweenRefTop.current.reverse()
-                tweenRefBottom.current.reverse()
+        if (width) {
+            if (width >= 1440) {
+                if (hover) {
+                    tweenRefTop.current.play()
+                    tweenRefBottom.current.play()
+                } else {
+                    tweenRefTop.current.reverse()
+                    tweenRefBottom.current.reverse()
+                }
             }
         }
+
     }, [hover, width])
 
 
