@@ -7,7 +7,7 @@ import React from "react";
 export const AppContainer = ({children}: Readonly<{children: React.ReactNode}>) => {
     return (
         <StoreProvider>
-            <App children={children}/>
+            <App>{children}</App>
         </StoreProvider>
     )
 }
