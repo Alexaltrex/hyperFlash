@@ -14,7 +14,7 @@ export const Referals = () => {
 
     const onCopy = () => {
         if (!copied) {
-            navigator.clipboard.writeText(code).then(r => {
+            navigator.clipboard.writeText(code).then(() => {
             });
             setCopied(true);
             setTimeout(() => {

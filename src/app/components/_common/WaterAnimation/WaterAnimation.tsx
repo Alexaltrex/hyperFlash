@@ -2,7 +2,7 @@
 
 import style from "./WaterAnimation.module.scss"
 
-import {Box, MeshDistortMaterial, OrbitControls, PerspectiveCamera} from "@react-three/drei";
+import {MeshDistortMaterial, PerspectiveCamera} from "@react-three/drei";
 import {Canvas} from "@react-three/fiber";
 import {clsx} from "clsx";
 

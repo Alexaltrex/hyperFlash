@@ -1,7 +1,6 @@
 import style from "./Points.module.scss"
 import {points} from "./data";
 import {clsx} from "clsx";
-import {Fragment} from "react";
 import {manrope} from "../../../assets/fonts/fonts";
 import {TooltipCustom} from "../../components/_common/TooltipCustom/TooltipCustom";
 
