@@ -1,10 +1,14 @@
-import styles from "./ValidatorsPage.module.scss";
+import type {Metadata} from "next";
+import {ValidatorComponent} from "./ValidatorComponent";
+
+export const metadata: Metadata = {
+    title: "HyperFlash - Validators",
+    description: "Mev Powered Staking Rewards",
+};
 
 const ValidatorsPage = () => {
   return (
-    <div className={styles.validatorsPage}>
-        Validators Page
-    </div>
+      <ValidatorComponent/>
   );
 }
 

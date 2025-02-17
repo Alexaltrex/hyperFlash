@@ -1,6 +1,6 @@
 @import "../../assets/styles/app";
 
-.pointsComponent {
+.validatorComponent {
   @include container;
   position: relative;
   width: 100%;
@@ -14,22 +14,17 @@
       @include h2;
     }
 
-    .content {
-      margin-top: 16px;
+    .bottom {
+      margin-top: 24px;
 
       @include desktop {
-        margin-top: 24px;
         display: grid;
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 16px;
-      }
-
-      .left {
-
       }
     }
 
 
-  }
 
+  }
 }

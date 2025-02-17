@@ -2,7 +2,7 @@ import {PointsComponent} from "./PointsComponent";
 import type {Metadata} from "next";
 
 export const metadata: Metadata = {
-    title: "HyperFlash - PointsComponent",
+    title: "HyperFlash - Points",
     description: "Mev Powered Staking Rewards",
 };
 
